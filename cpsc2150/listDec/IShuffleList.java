@@ -2,7 +2,7 @@ package cpsc2150.listDec;
 
 import java.util.List;
 
-abstract interface IShuffleList<T> extends List<T> {
+public abstract interface IShuffleList<T> extends List<T> {
 	/*
 	 * Switches two random items in the list for the number of times specified by swaps
 	 *
