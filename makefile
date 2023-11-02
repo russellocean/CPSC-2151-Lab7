@@ -5,9 +5,9 @@ JC = javac
 	$(JC) $(JFLAGS) $*.java
 
 CLASSES = \
-	ShuffleApp.java \
-	ShuffleList.java \
-	IShuffleList.java 
+	cpsc2150/listDec/ShuffleApp.java \
+	cpsc2150/listDec/ShuffleList.java \
+	cpsc2150/listDec/IShuffleList.java 
 
 default: classes
 
