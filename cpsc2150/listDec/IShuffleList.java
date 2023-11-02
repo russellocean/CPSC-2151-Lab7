@@ -3,6 +3,13 @@ package cpsc2150.listDec;
 import java.util.List;
 
 abstract interface IShuffleList<T> extends List<T> {
+	/*
+	 * Switches two random items in the list for the number of times specified by swaps
+	 *
+	 * @param swaps number of times to swap
+	 *
+	 * @post the list has had two elements swapped at random swaps times
+	 */
     default void shuffle(int swaps) {
         // base case
         if (swaps <= 0) {
@@ -20,6 +27,16 @@ abstract interface IShuffleList<T> extends List<T> {
         shuffle(swaps - 1);
     }
 
+	/*
+	 * Swap two items in the list, specified by i and j
+	 *
+	 * @param i first item to swap
+	 * @param j second item to swap
+	 *
+	 * @pre i and j are valid indexes of the list
+	 *
+	 * @post list[i] = list[j] AND list[j] = list[i]
+	 */
     default void swap(int i, int j) {
         T temp = get(i);
         set(i, get(j));
