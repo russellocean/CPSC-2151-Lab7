@@ -2,7 +2,7 @@ package cpsc2150.listDec;
 
 import java.util.List;
 
-interface IShuffleList<T> extends List<T> {
+abstract interface IShuffleList<T> extends List<T> {
     default void shuffle(int swaps) {
         // base case
         if (swaps <= 0) {
