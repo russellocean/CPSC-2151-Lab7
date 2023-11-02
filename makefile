@@ -14,7 +14,7 @@ default: classes
 classes: $(CLASSES:.java=.class)
 
 run: classes
-	java ShuffleApp
+	java cpsc2150.listDec.ShuffleApp
 
 clean:
 	$(RM) *.class
